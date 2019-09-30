@@ -4,12 +4,11 @@
 #include <Windows.h>
 #include <list>
 #include <thread>
-#include <consoleapi.h>
 
 struct HETimerInfo {
 	unsigned int id;
-	unsigned long usec;
-	unsigned long last_time;
+	ULONGLONG usec;
+	ULONGLONG last_time;
 	int param;
 	const char* str_param;
 	bool del;

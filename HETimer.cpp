@@ -25,7 +25,7 @@ void HETimer::AddTimer(unsigned int id, unsigned long usec, int param, const cha
 		info.usec = usec;
 		info.param = param;
 		info.str_param = str_param;
-		info.last_time = GetTickCount();
+		info.last_time = GetTickCount64();
 		info.del = false;
 		EnterCriticalSection(&critical_section);
 		task.push_back(info);
@@ -60,7 +60,7 @@ void HETimer::CloseTimer() {
 }
 
 void HETimer::TimerRun() {
-	const auto now = GetTickCount();
+	const auto now = GetTickCount64();
 	EnterCriticalSection(&critical_section);
 	for (auto item = task.begin(); item != task.end(); ++item) {
 		if (now - item->last_time >= item->usec) {
