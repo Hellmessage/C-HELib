@@ -21,9 +21,21 @@
     <ClInclude Include="HELib.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="HEWindow.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="HEString.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="HETimer.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="HEWindow.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="HEString.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>

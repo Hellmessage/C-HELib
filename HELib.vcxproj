@@ -154,10 +154,14 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="HELib.h" />
+    <ClInclude Include="HEString.h" />
     <ClInclude Include="HETimer.h" />
+    <ClInclude Include="HEWindow.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="HEString.cpp" />
     <ClCompile Include="HETimer.cpp" />
+    <ClCompile Include="HEWindow.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

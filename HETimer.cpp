@@ -1,8 +1,6 @@
 ﻿#include "HETimer.h"
 
-
 using namespace std;
-
 
 HETimer::HETimer() {
 	bus = nullptr;
